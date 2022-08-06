@@ -5,7 +5,10 @@ export default function Footer() {
     <>
       <Text tag="p">
         This website is open-source on{" "}
-        <A href="/" className="github-text">
+        <A
+          href="https://github.com/Lolly1150/my-website"
+          className="github-text"
+        >
           Github
         </A>
       </Text>
