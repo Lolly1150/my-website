@@ -1,13 +1,13 @@
-import { useState, useCallback } from "react";
-import Particles from "react-particles";
-import type { Engine } from "tsparticles-engine";
-import { loadFull } from "tsparticles";
 import "./styles/App.scss";
 import Logo from "./components/Logo";
 import { BsGithub } from "react-icons/bs";
 import { FaDiscord } from "react-icons/fa";
 import A from "./components/A";
 import Text from "./components/Text";
+import Footer from "./components/Footer";
+import Particles from "react-particles";
+import type { Engine } from "tsparticles-engine";
+import { loadFull } from "tsparticles";
 function App() {
   const customInit = async (engine: Engine) => {
     await loadFull(engine);
@@ -15,7 +15,7 @@ function App() {
   const options = {
     particles: {
       number: {
-        value: 120,
+        value: 130,
         density: {
           enable: true,
           value_area: 700,
@@ -36,7 +36,7 @@ function App() {
       },
       opacity: {
         value: 1,
-        random: true,
+        random: false,
         anim: {
           enable: true,
           speed: 10,
@@ -45,7 +45,7 @@ function App() {
         },
       },
       size: {
-        value: 3.0,
+        value: 4.0,
         random: true,
         anim: {
           enable: false,
@@ -118,7 +118,7 @@ function App() {
       <Logo />
       <Text tag="h1">Lolly</Text>
       <Text tag="p" className="bio">
-        Hello!I'am Lolly i love coding in javascript , typescript and react.
+        Hello! I'm Lolly, I love coding in javascript, typescript and react.
       </Text>
       <div className="icon-div">
         <div className="github-div">
@@ -131,6 +131,9 @@ function App() {
             <FaDiscord className="discord-icon" />
           </A>
         </div>
+      </div>
+      <div className="footer">
+        <Footer />
       </div>
     </>
   );

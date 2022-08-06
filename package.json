@@ -13,7 +13,6 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
     "react-particles": "^2.1.4",
-    "react-tsparticles": "^2.1.4",
     "sass": "^1.54.3",
     "tsparticles": "^2.1.4",
     "tsparticles-engine": "^2.1.4"
