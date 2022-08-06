@@ -1,0 +1,63 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.logo {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -80px;
+  margin-right: 10px;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  will-change: filter;
+}
+
+.icon-div {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  .github-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    .github-icon {
+      display: flex;
+      justify-content: center;
+      margin-top: auto;
+      width: 30px;
+      height: 30px;
+      color: rgb(163, 156, 156);
+      &:hover {
+        color: #fff;
+        transition: color 0.2s ease-in;
+      }
+    }
+  }
+  .discord-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    .discord-icon {
+      display: flex;
+      justify-content: center;
+      margin-top: auto;
+      width: 35px;
+      height: 35px;
+      color: rgb(163, 156, 156);
+      &:hover {
+        color: #fff;
+        transition: color 0.2s ease-in;
+      }
+    }
+  }
+}
