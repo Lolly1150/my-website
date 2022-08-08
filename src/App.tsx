@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import Particles from "react-particles";
 import type { Engine } from "tsparticles-engine";
 import { loadFull } from "tsparticles";
+import { useEffect, useState } from "react";
 function App() {
   const customInit = async (engine: Engine) => {
     await loadFull(engine);
@@ -112,12 +113,22 @@ function App() {
     },
     retina_detect: true,
   };
+  const handlerClick = () => {
+    new Audio("/rick.mp3").play();
+  };
   return (
     <>
       <Particles options={options} init={customInit} />
       <Logo />
       <Text tag="h1">Lolly</Text>
       <Text tag="p" className="bio">
+        <img
+          draggable="false"
+          className="emoji"
+          alt="🇮🇹"
+          src="https://twemoji.maxcdn.com/v/14.0.2/72x72/1f1ee-1f1f9.png"
+          onClick={() => handlerClick()}
+        />{" "}
         Hello! I'm Lolly, I love coding in javascript, typescript and react.
       </Text>
       <div className="icon-div">
